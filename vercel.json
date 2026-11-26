@@ -1,9 +1,4 @@
 
 {
-  "rewrites": [
-    {
-      "source": "/about",
-      "destination": "/about.html"
-    }
-  ]
+  "cleanUrls": true
 }
