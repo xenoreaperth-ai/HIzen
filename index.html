@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIzen.com</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Rajdhani:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080b0a;
+            color: #ffffff;
+            font-family: 'Rajdhani', 'Noto Sans Thai', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 9%;
+            border-bottom: 1px solid #202722;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 23px;
+            font-weight: 700;
+            color: #12e3ff;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #12e3ff;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 9%;
+        }
+
+        .tag {
+            color: #12e3ff;
+            letter-spacing: 4px;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(38px, 8vw, 85px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #12e3ff;
+        }
+
+        .description {
+            color: #999999;
+            font-size: 19px;
+            max-width: 500px;
+            line-height: 1.8;
+        }
+
+        .button {
+            display: inline-block;
+            width: fit-content;
+            margin-top: 35px;
+            padding: 13px 30px;
+            background: #12e3ff;
+            color: #080b0a;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            transition: 0.3s;
+            border-radius: 999px;
+        }
+
+        .button:hover {
+            background: #ffffff;
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px rgba(18, 227, 255, 0.3);
+        }
+
+        .section {
+            padding: 70px 9%;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .section-title span {
+            color: #12e3ff;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #000000;
+            border: 1px solid #0e2f4b;
+            padding: 35px 30px;
+            transition: 0.3s;
+            border-radius: 35px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card:hover {
+            border-color: #12e3ff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(18, 227, 255, 0.1);
+        }
+
+        .card h3 {
+            color: #12e3ff;
+            font-size: 23px;
+            margin-bottom: 12px;
+            font-family: 'Orbitron', 'Noto Sans Thai', sans-serif;
+        }
+
+        .card p {
+            color: #999999;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666666;
+            border-top: 1px solid #202722;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 15px;
+            }
+
+            .hero {
+                min-height: 65vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">HIZEN.COM</div>
+
+        <nav>
+            <a href="index.html">หน้าหลัก</a>
+            <a href="about.html">เกี่ยวกับเรา</a>
+            <a href="CONTACT.html">ติดต่อเรา</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="tag">WELCOME TO MY PROFILE</div>
+
+        <h1>
+            HIZEN<br>
+            <span>WAB</span>
+        </h1>
+
+        <p class="description">
+            ยินดีต้อนรับเข้า สู่เว็บไซต์ ของ HIZEN!
+        </p>
+    </section>
+
+    <section class="section" id="about">
+        <h2 class="section-title">
+            FOLLOW <span>ME</span>
+        </h2>
+
+        <div class="cards">
+
+            <a href="https://discord.gg/BbhKqPqac"
+               target="_blank"
+               rel="noopener noreferrer"
+               style="display:block; text-decoration:none; color:inherit;">
+
+                <div class="card">
+                    <h3>DISCORD</h3>
+                    <p>ดิสคอส ของเรา</p>
+                </div>
+
+            </a>
+
+            <a href="https://www.youtube.com/@HIzenXXI"
+               target="_blank"
+               rel="noopener noreferrer"
+               style="display:block; text-decoration:none; color:inherit;">
+
+                <div class="card">
+                    <h3>YOUTUBE</h3>
+                    <p>ยูทูป ของเรา</p>
+                </div>
+
+            </a>
+
+            <div class="card">
+                <h3>COMMUNITY</h3>
+                <p>
+                    พื้นที่สำหรับคนที่ชื่นชอบ
+                    การเล่นเกมเหมือนกัน
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section-title">
+            <span>GOOD DAY !</span>
+        </h2>
+
+        <p class="description">
+            Thanks for visiting my website.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 HIZEN.COM ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
