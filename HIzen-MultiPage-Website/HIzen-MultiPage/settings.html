@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>HIzen — Settings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body data-page="settings">
+<div class="ambient"></div>
+<header class="topbar">
+  <a class="brand" href="index.html">HI<span>zen</span></a>
+  <nav class="desktop-nav"><a href="index.html" class="nav-link " data-th="หน้าหลัก" data-en="Home"><span class="nav-symbol">house</span><span>หน้าหลัก</span></a>
+<a href="about.html" class="nav-link " data-th="เกี่ยวกับเรา" data-en="About"><span class="nav-symbol">info</span><span>เกี่ยวกับเรา</span></a>
+<a href="features.html" class="nav-link " data-th="ฟีเจอร์" data-en="Features"><span class="nav-symbol">sparkles</span><span>ฟีเจอร์</span></a>
+<a href="chat.html" class="nav-link " data-th="ถาม HIzen" data-en="Ask HIzen"><span class="nav-symbol">message-circle</span><span>ถาม HIzen</span></a>
+<a href="settings.html" class="nav-link active" data-th="ตั้งค่า" data-en="Settings"><span class="nav-symbol">settings</span><span>ตั้งค่า</span></a></nav>
+  <div class="top-actions">
+    <button class="pill-button" id="language-toggle" type="button">TH / EN</button>
+    <button class="round-button" id="theme-toggle" type="button" aria-label="Toggle theme">☼</button>
+    <button class="round-button menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-inner">
+    <div class="mobile-menu-heading"><span>MENU</span><button id="menu-close" class="round-button" type="button" aria-label="Close menu">×</button></div>
+    <a href="index.html" class="nav-link " data-th="หน้าหลัก" data-en="Home"><span class="nav-symbol">house</span><span>หน้าหลัก</span></a>
+<a href="about.html" class="nav-link " data-th="เกี่ยวกับเรา" data-en="About"><span class="nav-symbol">info</span><span>เกี่ยวกับเรา</span></a>
+<a href="features.html" class="nav-link " data-th="ฟีเจอร์" data-en="Features"><span class="nav-symbol">sparkles</span><span>ฟีเจอร์</span></a>
+<a href="chat.html" class="nav-link " data-th="ถาม HIzen" data-en="Ask HIzen"><span class="nav-symbol">message-circle</span><span>ถาม HIzen</span></a>
+<a href="settings.html" class="nav-link active" data-th="ตั้งค่า" data-en="Settings"><span class="nav-symbol">settings</span><span>ตั้งค่า</span></a>
+    <div class="mobile-menu-bottom"><span>HIzen / DIGITAL SPACE</span><span id="menu-clock">--:--</span></div>
+  </div>
+</div>
+<main class="page-shell">
+  <div class="page-kicker"><span class="live-dot"></span><span>PREFERENCES</span></div>
+  <div class="page-heading">
+    <div><h1>ตั้งค่าเว็บไซต์</h1><p class="lead" data-th="ปรับแต่งประสบการณ์การใช้งานให้เหมาะกับคุณ" data-en="Customize your experience to suit your preferences.">ปรับแต่งประสบการณ์การใช้งานให้เหมาะกับคุณ</p></div>
+    <div class="page-index">05 <span>/ 05</span></div>
+  </div>
+  <section class="content-area">
+    <div class="intro-block"><span class="section-label">MAKE IT YOURS</span><h2 data-th="เลือกภาษาและธีมที่ต้องการ การตั้งค่าจะถูกบันทึกไว้ในอุปกรณ์นี้" data-en="Make HIzen feel like yours.">เลือกภาษาและธีมที่ต้องการ การตั้งค่าจะถูกบันทึกไว้ในอุปกรณ์นี้</h2></div>
+    
+        <div class="settings-panel">
+          <div class="setting-row"><div><h3 data-th="ธีมเว็บไซต์" data-en="Website theme">ธีมเว็บไซต์</h3><p data-th="เลือกโทนสีที่ต้องการ" data-en="Choose your preferred appearance.">เลือกโทนสีที่ต้องการ</p></div><div class="segmented"><button type="button" data-theme-choice="dark">Dark</button><button type="button" data-theme-choice="light">Light</button></div></div>
+          <div class="setting-row"><div><h3 data-th="ภาษา" data-en="Language">ภาษา</h3><p data-th="เลือกภาษาของเว็บไซต์" data-en="Choose the website language.">เลือกภาษาของเว็บไซต์</p></div><div class="segmented"><button type="button" data-lang-choice="th">ไทย</button><button type="button" data-lang-choice="en">English</button></div></div>
+        </div>
+        
+  </section>
+</main>
+<footer class="footer"><a class="footer-brand" href="index.html">HIzen</a><span>© <span class="year"></span> HIzen. All rights reserved.</span><span class="footer-note">DESIGNED FOR SIMPLICITY</span></footer>
+</body>
+</html>
